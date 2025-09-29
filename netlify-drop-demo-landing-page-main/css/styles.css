@@ -179,6 +179,15 @@ main {
   font-size: clamp(1.5rem, 2.5vw, 3.5rem);
 }
 
+.about h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about h1 a:hover {
+  opacity: 0.8;
+}
+
 .about h2 {
   font-size: clamp(1.2rem, 2vw, 2.7rem);
 }
