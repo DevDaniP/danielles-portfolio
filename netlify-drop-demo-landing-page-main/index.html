@@ -27,49 +27,66 @@
   <!-- This class is removed if the user has JavaScript enabled -->
   <body class="no-js">
     <header>
-      <!-- Dark mode toggle -->
-      <div class="mode-toggle">
-        <button class="[ toggle-button ] [ js-mode-toggle ]">
-          <span class="toggle-icon" aria-hidden="true"></span>
-          <span class="[ toggle-text ] [ js-mode-toggle-text ]"
-            >Switch to dark theme</span
-          >
-        </button>
+      <!-- Navigation Bar -->
+      <nav class="top-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="https://www.linkedin.com/in/danielle-davis-peterson" target="_blank">LinkedIn</a>
+        <a href="https://github.com/DevDaniP" target="_blank">GitHub</a>
+      </nav>
+      
+      <!-- Name and Dark mode toggle row -->
+      <div class="header-row">
+        <div class="name-section">
+          <h1 class="main-name">Danielle Davis</h1>
+          <p class="tagline">Software Developer | Data Analyst | Problem Solver</p>
+        </div>
+        
+        <!-- Dark mode toggle -->
+        <div class="mode-toggle">
+          <button class="[ toggle-button ] [ js-mode-toggle ]">
+            <span class="toggle-icon" aria-hidden="true"></span>
+            <span class="[ toggle-text ] [ js-mode-toggle-text ]"
+              >Switch to dark theme</span
+            >
+          </button>
+        </div>
       </div>
     </header>
+    <!-- Tech Tags Row -->
+  <div class="header-tech-tags">
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">SQL</span>
+    <span class="tech-tag">R</span>
+    <span class="tech-tag">Tableau</span>
+    <span class="tech-tag">C++</span>
+    <span class="tech-tag">HTML/CSS</span>
+    <span class="tech-tag">MySQL</span>
+    <span class="tech-tag">Git/GitHub</span>
+    <span class="tech-tag">Power BI</span>
+    <span class="tech-tag">Unreal</span>
+  </div>
+</header>
     <main>
       <section class="about">
-        <img src="images/danielle 2025.png" width="512" alt="A picture of me" />
-
-        <h1>Danielle Davis</h1>
-        <p>
-          learn more about my journey, or get in touch – everything you need is
-          just a click away.
-        </p>
+        <div class="profile-container">
+          <img src="images/danielle 2025.png" width="512" alt="A picture of me" class="profile-image" />
+          <div class="profile-text">
+            <p>
+              Computer science student passionate about turning data into insights and 
+              building solutions that solve real problems. Currently pursuing my BS at 
+              Southern Oregon University while working as an IT Analyst.
+              Learn more about my journey, or get in touch
+               – everything you need is
+              just a click away.
+            </p>
+           
+          </div>
+        </div>
       </section>
-      <nav class="links">
-        <!-- Update <a href=""> to point to your accounts -->
-        <!-- Update <span> to your usernames -->
-        <a href="about.html">
-          <strong>About Me</strong>
-          <span>Learn more about me</span>
-        </a>
-        <a href="portfolio.html">
-          <strong>Portfolio</strong>
-          <span>my projects</span>
-        </a>
-        <a href="https://www.linkedin.com/in/danielle-davis-peterson">
-          <strong>LinkedIn</strong>
-          <span>@danielle-davis-peterson</span>
-        </a>
-        <a href="https://github.com/DevDaniP">
-          <strong>GitHub</strong>
-          <span>@DevDaniP</span>
-        </a>
-      </nav>
     </main>
 
-    <!-- Dark mode button functionality -->
     <script src="js/dark-mode.js"></script>
   </body>
 </html>

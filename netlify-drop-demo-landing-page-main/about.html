@@ -7,60 +7,93 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-
-    <!-- The name of your site that shows up in the browser tab -->
-    <title>About me</title>
-
-    <!-- Describe what your site is about -->
+    <title>About Me - Danielle Davis</title>
     <meta
       name="description"
-      content="A brief overview of my background and skills."
+      content="Computer science student and data analyst passionate about turning data into insights and solving problems with technology."
     />
-
-    <!-- This is the small icon that shows up in the browser tab -->
     <link rel="shortcut icon" href="/images/favicon.png" />
-
-    <!-- Styling for this site -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <!-- This class is removed if the user has JavaScript enabled -->
   <body class="no-js">
     <header>
-      <!-- Dark mode toggle -->
-      <div class="mode-toggle">
-        <button class="[ toggle-button ] [ js-mode-toggle ]">
-          <span class="toggle-icon" aria-hidden="true"></span>
-          <span class="[ toggle-text ] [ js-mode-toggle-text ]"
-            >Switch to dark theme</span
-          >
-        </button>
+      <!-- Navigation Bar -->
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="https://www.linkedin.com/in/danielle-davis-peterson" target="_blank">LinkedIn</a>
+        <a href="https://github.com/DevDaniP" target="_blank">GitHub</a>
+      </nav>
+      
+      <!-- Name and Dark mode toggle row -->
+      <div class="header-row">
+        <div class="name-section">
+          <h1 class="main-name">About Me</h1>
+          <p class="tagline">Software Developer | Data Analyst | Problem Solver</p>
+        </div>
+        
+        <!-- Dark mode toggle -->
+        <div class="mode-toggle">
+          <button class="[ toggle-button ] [ js-mode-toggle ]">
+            <span class="toggle-icon" aria-hidden="true"></span>
+            <span class="[ toggle-text ] [ js-mode-toggle-text ]"
+              >Switch to dark theme</span>
+            >
+          </button>
+        </div>
       </div>
     </header>
+    
     <main>
       <section class="about">
-        <h1><a href="index.html">Home Page</a></h1>
+        <h2>Hi, I'm Danielle</h2>
+        
         <p>
-          learn more about my journey, or get in touch – everything you need is
-          just a click away.
+          I'm a computer science student and data analyst who discovered my passion for 
+          technology through an unexpected path. After 15 years across various industries—from 
+          inventory management to greenhouse cultivation—I realized my favorite part of every 
+          job was solving problems and optimizing systems. That realization led me back to 
+          school, and I haven't looked back since.
+        </p>
+        
+        <p>
+          Currently pursuing my BS in Computer Science at Southern Oregon University (3.91 GPA) 
+          while working as an IT Analyst on campus, I've combined hands-on technical support 
+          with intensive coursework in software development, data analysis, and AI engineering. 
+          I completed a data analyst bootcamp where I mastered SQL, Tableau, and cloud platforms, 
+          and now I'm working toward dual certifications in software and web development.
+        </p>
+        
+        <p>
+          What drives me is turning messy data into clear insights and complex problems into 
+          elegant solutions. Whether I'm building a RAG-powered transcript search engine, 
+          analyzing NBA scheduling data in R, or cleaning thousands of rows of layoff data 
+          with SQL, I love the challenge of making technology work smarter for people.
+        </p>
+        
+        <p>
+          When I'm not coding, you'll find me in Ashland, Oregon—hiking, exploring new 
+          tech trends, or figuring out how to automate something that probably doesn't 
+          need automating (but definitely should be).
+        </p>
+        
+        <h2>What I Bring to the Table</h2>
+        <ul>
+          <li><strong>Technical Versatility:</strong> From Python and SQL to C++ and cloud platforms, I adapt quickly to new technologies</li>
+          <li><strong>Real-World Problem Solving:</strong> 15 years of diverse experience taught me to see problems from multiple angles</li>
+          <li><strong>Data-Driven Mindset:</strong> I don't just build things—I analyze, optimize, and iterate based on evidence</li>
+          <li><strong>Collaborative Spirit:</strong> Whether supporting 100+ campus computers or working on team projects, I thrive in collaborative environments</li>
+        </ul>
+        
+        <p>
+          <strong>Currently seeking opportunities in:</strong> Data Analysis, Software Development, 
+          or IT roles where I can combine technical skills with creative problem-solving.
         </p>
       </section>
-      <nav class="links">
-        <!-- Update <a href=""> to point to your accounts -->
-        <!-- Update <span> to your usernames -->
-        <h1>About Danielle Davis</h1>
-        <p>
-          Hi, I'm Danielle – a computer science graduate who loves turning ideas
-          into reality through code. Whether I'm uncovering insights through
-          data analysis, building robust applications, or creating interactive
-          experiences, I'm driven by the challenge of solving real-world
-          problems with technology. Explore my projects spanning SQL, Python,
-          C++, RStudio, and Unreal Engine.
-        </p>
-      </nav>
     </main>
 
-    <!-- Dark mode button functionality -->
     <script src="js/dark-mode.js"></script>
   </body>
 </html>

@@ -7,53 +7,224 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-
-    <!-- The name of your site that shows up in the browser tab -->
-    <title>About me</title>
-
-    <!-- Describe what your site is about -->
+    <title>Portfolio - Danielle Davis</title>
     <meta
       name="description"
-      content="A brief overview of my background and skills."
+      content="View my projects and work samples."
     />
-
-    <!-- This is the small icon that shows up in the browser tab -->
     <link rel="shortcut icon" href="/images/favicon.png" />
-
-    <!-- Styling for this site -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <!-- This class is removed if the user has JavaScript enabled -->
   <body class="no-js">
     <header>
-      <!-- Dark mode toggle -->
-      <div class="mode-toggle">
-        <button class="[ toggle-button ] [ js-mode-toggle ]">
-          <span class="toggle-icon" aria-hidden="true"></span>
-          <span class="[ toggle-text ] [ js-mode-toggle-text ]"
-            >Switch to dark theme</span
-          >
-        </button>
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="https://www.linkedin.com/in/danielle-davis-peterson" target="_blank">LinkedIn</a>
+        <a href="https://github.com/DevDaniP" target="_blank">GitHub</a>
+      </nav>
+      
+      <div class="header-row">
+        <div class="name-section">
+          <h1 class="main-name">My Portfolio</h1>
+          <p class="tagline">Software Developer | Data Analyst | Problem Solver</p>
+        </div>
+        
+        <div class="mode-toggle">
+          <button class="[ toggle-button ] [ js-mode-toggle ]">
+            <span class="toggle-icon" aria-hidden="true"></span>
+            <span class="[ toggle-text ] [ js-mode-toggle-text ]"
+              >Switch to dark theme</span
+            >
+          </button>
+        </div>
       </div>
     </header>
+
     <main>
-      <section class="about">
-        <h1><a href="index.html">Home Page</a></h1>
-        <p>
-          learn more about my journey, or get in touch – everything you need is
-          just a click away.
-        </p>
+      <section class="portfolio-intro">
+        <p>Here are some of my coding projects that showcase my skills in software development and data analysis.</p>
       </section>
-      <nav class="links">
-        <!-- Update <a href=""> to point to your accounts -->
-        <!-- Update <span> to your usernames -->
-        <h1>My Portfolio</h1>
-        <p>Click on the links below to view some of my projects.</p>
-      </nav>
+
+      <section class="projects-section">
+        <div class="project-grid">
+          
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <div class="project-image">
+  <video autoplay loop muted playsinline>
+    <source src="images/vecteezy_coming-soon-neon-title-animation_55308484.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+            <div class="project-content">
+              <h2 class="project-title">Capstone</h2>
+              <p class="project-description">
+                will be a comprehensive overview of my senior capstone project this July 2026
+              </p>
+              <div class="tech-stack">
+                
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/DevDaniP/project-name" class="btn btn-primary" target="_blank">
+                  <span>GitHub</span>
+                </a>
+                <a href="https://your-demo-link.com" class="btn btn-secondary" target="_blank">
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          
+          <!-- SQL + Tableau Project -->
+<article class="project-card">
+  <div class="project-image">
+    <img src="images/layoffs-dashboard.png" alt="Layoffs Data Analysis Dashboard">
+  </div>
+  <div class="project-content">
+    <h2 class="project-title">Company Layoffs: SQL Analysis & Tableau Dashboard</h2>
+    <p class="project-description">
+      End-to-end data project: Cleaned 2,000+ rows of layoff data using SQL (removing duplicates, 
+      standardizing formats, handling nulls), then created an interactive Tableau dashboard 
+      visualizing trends across industries, companies, and time periods.
+    </p>
+    <div class="tech-stack">
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">MySQL</span>
+      <span class="tech-tag">Tableau</span>
+      <span class="tech-tag">Data Cleaning</span>
+      <span class="tech-tag">Data Visualization</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/DevDaniP/MYSQL-project1.git" class="btn btn-primary" target="_blank">
+        <span>SQL Code</span>
+      </a>
+      <a href="https://public.tableau.com/app/profile/danielle.davis7187/viz/LayoffsDataAnalysis/Dashboard1?publish=yes" class="btn btn-secondary" target="_blank">
+        <span>Interactive Dashboard</span>
+      </a>
+    </div>
+  </div>
+</article>
+        <article class="project-card">
+  <div class="project-image">
+    <img src="images/rollforshoes.png" alt="AI Text Adventure Game Screenshot">
+  </div>
+  <div class="project-content">
+    <h2 class="project-title">AI-Powered Text Adventure Game</h2>
+    <p class="project-description">
+      Interactive RPG using OpenAI's GPT-4 as a dynamic game master. Features dice-based 
+      action resolution, persistent conversation memory, and adaptive storytelling that 
+      responds to player choices.
+    </p>
+    <div class="tech-stack">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">OpenAI API</span>
+      <span class="tech-tag">GPT-4</span>
+      <span class="tech-tag">OOP</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/cs320f24/roll-for-shoes-DevDaniP.git" class="btn btn-primary" target="_blank">
+        <span>View Code</span>
+      </a>
+    </div>
+  </div>
+</article>
+        <article class="project-card">
+  <div class="project-image">
+    <img src="images/rag3.png" alt="Transcript RAG Search System">
+  </div>
+  <div class="project-content">
+    <h2 class="project-title">AI-Powered Transcript Search Engine</h2>
+    <p class="project-description">
+      RAG (Retrieval-Augmented Generation) system that imports video transcripts, 
+      stores them in a vector database, and enables semantic search with AI-generated 
+      summaries. Search hours of content instantly by meaning, not just keywords.
+    </p>
+    <div class="tech-stack">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">RAG</span>
+      <span class="tech-tag">ChromaDB</span>
+      <span class="tech-tag">Vector Embeddings</span>
+      <span class="tech-tag">NLP</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/DevDaniP/hw7-rag-DevDaniP.git" class="btn btn-primary" target="_blank">
+        <span>View Code</span>
+      </a>
+    </div>
+  </div>
+</article>
+<!-- Project Card 2 -->
+          <article class="project-card">
+            <div class="project-image">
+  <video autoplay loop muted playsinline>
+    <source src="images/vecteezy_coming-soon-neon-title-animation_55308484.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+            <div class="project-content">
+              <h2 class="project-title">Unreal project</h2>
+              <p class="project-description">
+                An interactive dashboard that visualizes sales data trends and provides actionable business insights.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/DevDaniP/project-name" class="btn btn-primary" target="_blank">
+                  <span>GitHub</span>
+                </a>
+                <a href="https://your-demo-link.com" class="btn btn-secondary" target="_blank">
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        <article class="project-card">
+  <div class="project-image">
+  <video autoplay loop muted playsinline>
+    <source src="images/vecteezy_coming-soon-neon-title-animation_55308484.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+  <div class="project-content">
+    <h2 class="project-title">NBA Schedule Fatigue Analysis</h2>
+    <p class="project-description">
+      Statistical analysis examining how travel distance and rest days impact NBA 
+      team performance. Used R, tidyverse, and logistic regression to analyze 
+      five seasons of schedule data and quantify fatigue effects.
+    </p>
+    <div class="tech-stack">
+      <span class="tech-tag">R</span>
+      <span class="tech-tag">tidyverse</span>
+      <span class="tech-tag">ggplot2</span>
+      <span class="tech-tag">Statistical Modeling</span>
+      <span class="tech-tag">Sports Analytics</span>
+    </div>
+    <div class="project-links">
+      <a href="" class="btn btn-primary" target="_blank">
+        <span>View Code</span>
+      </a>
+      <a href="" class="btn btn-secondary" target="_blank">
+        <span>View Report</span>
+      </a>
+    </div>
+  </div>
+</article>
+        
+
+          <!-- Add more project cards as needed -->
+
+        </div>
+      </section>
     </main>
 
-    <!-- Dark mode button functionality -->
     <script src="js/dark-mode.js"></script>
   </body>
 </html>
