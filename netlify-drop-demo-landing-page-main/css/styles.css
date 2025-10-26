@@ -142,6 +142,34 @@ main {
   flex-direction: column;
   gap: 3vw;
   flex: 1;
+  /* Prevent horizontal overflow on mobile */
+@media screen and (max-width: 800px) {
+  main {
+    overflow-x: hidden;
+  }
+  
+  .about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .profile-image {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .profile-text {
+    width: 100%;
+  }
+}
 }
 
 @media screen and (min-width: 800px) {
@@ -718,4 +746,31 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Home Page Mobile Fix
+---------------------------*/
+
+@media screen and (max-width: 800px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .profile-text {
+    width: 100%;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .profile-image {
+    max-width: 300px;
+  }
 }
