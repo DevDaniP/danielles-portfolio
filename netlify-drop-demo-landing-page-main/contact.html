@@ -52,7 +52,7 @@
         Feel free to reach out if you'd like to connect or discuss potential opportunities!
       </p>
 
-      <form>
+      <form name="contact" method="POST" netlify>
         <div class="form-group">
           <label for="name">Your Name:</label>
           <input type="text" id="name" name="name" required>
@@ -89,14 +89,5 @@
   </main>
 
   <script src="js/dark-mode.js"></script>
-  
-  <script>
-    // Simple form validation (still learning JavaScript!)
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thanks for your message! (Note: This form is not actually connected to anything yet - still learning!)');
-    });
-  </script>
 </body>
 </html>
