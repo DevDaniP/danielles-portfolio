@@ -14,7 +14,7 @@
   --color-gray-L200: #f2f5f8;
   --color-gray-D200: #a3a8ac;
 
-  --color-mauve-Y500: #dd7c7c;
+  --color-mauve-Y500: #a868f1;
   --color-creme-Y400: #dddcd9;
 
   --color-red-R600: #db4648;
@@ -747,6 +747,59 @@ main {
   height: 100%;
   object-fit: cover;
 }
+
+/* Contact page */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
 /* Home Page Mobile Fix
 ---------------------------*/
 
